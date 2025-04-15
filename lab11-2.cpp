@@ -12,13 +12,13 @@ double getLowest(double times[], int numElements);
 
 int main()
 {
-    double finishTimes[5];  // Fix size from 0 to 5
+    double finishTimes[5] = {0.0};
     double average = 0.0;
     double lowestTime = 0.0;
    
     for (int x = 0; x < 5; x += 1) {
         cout << "Time for race " << x + 1 << ": ";
-        cin >> finishTimes[x];  // Fix input to store in array
+        cin >> finishTimes[x];  
     }
 
     average = getAverage(finishTimes, 5);
@@ -41,7 +41,7 @@ double getAverage(double times[], int numElements)
 
 double getLowest(double times[], int numElements)
 {
-    double lowest = times[0];  // Start with first element
+    double lowest = times[0];  
     for (int x = 1; x < numElements; x += 1) {
         if (times[x] < lowest)
             lowest = times[x];

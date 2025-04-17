@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include <cmath>
+
 using namespace std;
 
 double getAverage(double prices[], int numElements);

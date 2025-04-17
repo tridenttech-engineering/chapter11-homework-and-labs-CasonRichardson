@@ -3,7 +3,10 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
+
+double getAverage(double prices[], int numElements);
 
 int main()
 {
@@ -11,9 +14,19 @@ int main()
 	double total = 0.0;
 	double average = 0.0;
 
+	average = getAverage(prices, 10);
 
 	cout << fixed << setprecision(2);
 	cout << "Average stock price: $" << average << endl;
 	return 0;
 }	//end of main function
 
+double getAverage(double prices[], int numElements)
+{
+	double total = 0.0;
+	for (int x = 0; x < numElements; x += 1) {
+		total += prices[x];
+}
+return total/numElements;
+}
+	

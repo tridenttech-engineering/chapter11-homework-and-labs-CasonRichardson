@@ -16,7 +16,7 @@ int main()
 
 	average = getAverage(prices, 10);
 
-	cout << fixed << setprecision(2);
+	cout << fixed << setprecision(1);
 	cout << "Average stock price: $" << average << endl;
 	return 0;
 }	//end of main function
